@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Corned Earth</title>
+
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+	<div class="background error screen-width">
+		<h1>OOPS! Screen width must be at least 900px.</h1>
+	</div>
+
+	<div class="background error screen-height">
+		<h1>OOPS! Screen height must be at least 700px.</h1>
+	</div>
+
+	<div class="background apoc"></div>
+
+	<div class="background popcorn"></div>
+
+	<!--  -->
+
+	<h1 class="title">Corned Earth</h1>
+
+	<div class="player zer">
+		<img src="images/cup0.png" />
+		<h2>Player 1</h2>
+		<label>x-coord</label>
+		<input type="number" class="x" />
+		<label>y-coord</label>
+		<input type="number" class="y" />
+		<button class="throw-kern">Kern</button>
+	</div>
+
+	<div class="player one">
+		<img src="images/cup1.png" />
+		<h2>Player 2</h2>
+		<label>x-coord</label>
+		<input type="number" class="x" />
+		<label>y-coord</label>
+		<input type="number" class="y" />
+		<button class="throw-kern">Kern</button>
+	</div>
+
+	<!--  -->
+
+	<div class="cup zer"></div>
+	<div class="cup one"></div>
+
+	<!--  -->
+
+	<div class="landscape flex">
+		<div class="region zer"></div>
+		<div class="region one"></div>
+		<div class="region two"></div>
+		<div class="region thr"></div>
+	</div>
+
+	<!--  -->
+
+	<!-- sound effects -->
+	<audio class="audio-splat">
+		<source src="audio/splat.wav" />
+	</audio>
+	<audio class="audio-explosion">
+		<source src="audio/explosion.wav" />
+	</audio>
+	<audio class="audio-popcorn">
+		<source src="audio/popcorn.mp3" />
+	</audio>
+
+	<!-- toasty image and audio effect -->
+	<img src="images/toasty.png" class="toasty" />
+	<audio class="audio-toasty">
+		<source src="audio/toasty.mp3" />
+	</audio>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
